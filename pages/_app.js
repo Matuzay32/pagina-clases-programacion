@@ -1,5 +1,13 @@
-import '../styles/globals.css'
+// pages/_app.js
+import { ChakraProvider, theme } from "@chakra-ui/react";
+import { tema } from "../theme";
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function MyApp({ Component, pageProps }) {
+	return (
+		<ChakraProvider theme={tema}>
+			<Component {...pageProps} />
+		</ChakraProvider>
+	);
 }
+
+export default MyApp;

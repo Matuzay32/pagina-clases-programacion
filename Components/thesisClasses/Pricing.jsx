@@ -20,26 +20,24 @@ import { IconType } from "react-icons";
 
 const plansList = [
 	{
-		title: "Hobby",
-		price: 49,
+		title: "Academics Works",
+		price: 1500,
 		icon: FaBook,
 		features: [
-			"Deploy 5 apps",
-			"2 Servers",
-			"Push to deploy",
-			"Collaborate with your team",
+			"Writing of essays and theses in Spanish and English on topics related to marketing, psychology, and administration",
+			"Translation and revision of texts in Spanish and English related to marketing, psychology, and administration",
+			"Research and preparation of reports in Spanish and English on topics related to marketing, psychology, and administration",
 		],
 	},
 	{
-		title: "Growth",
-		price: 79,
+		title: "Tutorials in the area of ​​psychology.",
+		price: 1500,
 		icon: TbCertificate,
 		features: [
-			"Deploy 10 apps",
-			"4 Servers",
-			"Push to deploy",
-			"Collaborate with your team",
-			"Setup load balanced clusters",
+			"Private classes",
+			"We do academic works",
+			"follow-up in the learning process",
+			"The works can be done in both English and Spanish.",
 		],
 	},
 ];
@@ -81,23 +79,24 @@ const PricingCard = ({ title, price, icon, features }) => {
 					as={icon}
 					h={10}
 					w={10}
-					color="teal.500"
+					color="linkHeader.400"
 				/>
 				<chakra.h2 fontSize="2xl" fontWeight="bold">
 					{title}
 				</chakra.h2>
 				<Text fontSize="7xl" fontWeight="bold">
+					{price}
+
 					<Text
 						as="sup"
 						fontSize="3xl"
 						fontWeight="normal"
 						top="-1em">
-						$
+						ARS
 					</Text>
-					{price}
 				</Text>
 				<Text fontSize="md" color="gray.500">
-					per month
+					per Hour
 				</Text>
 			</Box>
 			<VStack spacing={2} alignItems="flex-start" my={6}>

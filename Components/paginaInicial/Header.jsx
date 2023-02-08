@@ -65,7 +65,6 @@ export default function Header() {
 							base: "center",
 							md: "left",
 						})}
-						// fontFamily={"heading"}
 						color={useColorModeValue(
 							"gray.800",
 							"white"
@@ -280,12 +279,6 @@ const NAV_ITEMS = [
 	{
 		label: "What we offer",
 		children: [
-			{
-				label: "English Classes",
-				subLabel:
-					"Improve your language skills with our comprehensive English classes",
-				href: "/englishClasses",
-			},
 			{
 				label: "Programming Classes",
 				subLabel:

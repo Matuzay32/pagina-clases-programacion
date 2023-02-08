@@ -11,8 +11,8 @@ import {
 export const siteConfig = {
 	author: {
 		imagen: "englishImg.jpeg",
-		title: "English Teacher",
-		desc: "Experienced English teacher passionate about making online lessons interactive and communication-focused.Online methodology",
+		title: "Asesora",
+		desc: "No dudes  en contactar a nuestra asesora profesional en la materia, estamos atentos a tu solicitud",
 		name: "Valentina ",
 		accounts: [
 			{

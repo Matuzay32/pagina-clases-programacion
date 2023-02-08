@@ -113,6 +113,7 @@ const DesktopNav = () => {
 							<Link
 								p={2}
 								href={navItem.href ?? ""}
+								textTransform={"capitalize"}
 								fontWeight={800}
 								color={linkColor}
 								_hover={{

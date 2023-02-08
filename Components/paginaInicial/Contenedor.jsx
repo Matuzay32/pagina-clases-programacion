@@ -5,9 +5,9 @@ import { Box } from "@chakra-ui/react";
 
 export default function Contenedor({ children }) {
 	return (
-		<Box pos={"relative"}>
+		<Box pos={"relative"} minH={"100vh"}>
 			<Header></Header>
-			{children}
+			<Box mb={"6rem"}>{children}</Box>
 
 			<Footer></Footer>
 		</Box>

@@ -62,7 +62,8 @@ export default function Hero() {
 							bg={"linkHeader.400"}
 							px={6}
 							_hover={{
-								bg: "linkHeader.500",
+								bgGradient:
+									"linear(to-l, #0ea5e9,#2563eb)",
 							}}
 							onClick={() => {
 								window.location.href = "/about";

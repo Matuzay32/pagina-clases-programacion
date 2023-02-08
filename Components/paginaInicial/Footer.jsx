@@ -74,7 +74,7 @@ export default function Footer() {
 			h={"auto"}
 			bottom={0}
 			w={"100%"}
-			bg={useColorModeValue("footerBg.200", "gray.900")}
+			bg={useColorModeValue("footerBg", "gray.900")}
 			color={useColorModeValue("gray.700", "gray.200")}>
 			<Container
 				as={Stack}

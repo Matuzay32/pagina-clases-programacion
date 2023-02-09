@@ -18,9 +18,7 @@ const testimonials = [
 		position: "CEO",
 		company: "Foodtesla",
 		image: "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&auto=format&fit=crop&w=334&q=80",
-		content: `Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
-      rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-      risus at semper`,
+		content: `Our vision at The Academic Temple is to help individuals achieve their goals and grow in the world of programming and web services. We strive to be a personal and dedicated company, providing high-quality classes and thesis support. We want to be a reference point for those seeking to improve their technical skills and achieve their dreams in this field. Our focus is on creating a friendly learning environment and offering a personalized and high-quality service to each of our clients at The Academic Temple."`,
 	},
 
 	{
@@ -29,9 +27,7 @@ const testimonials = [
 		position: "CEO",
 		company: "Foodtesla",
 		image: "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&auto=format&fit=crop&w=334&q=80",
-		content: `Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
-      rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-      risus at semper`,
+		content: `Our mission at The Academic Temple is to provide a comprehensive and high-quality education in programming and web services, including thesis support. We strive to develop technical and personal skills in each of our students, enabling them to achieve their goals and stand out in the job market. We maintain a focus on innovative teaching methodologies and foster a collaborative and positive learning environment. Our commitment is to provide exceptional service to each of our clients at The Academic Temple.`,
 	},
 ];
 

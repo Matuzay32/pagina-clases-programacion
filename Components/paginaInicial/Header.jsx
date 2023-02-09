@@ -1,4 +1,6 @@
 import {
+	VisuallyHidden,
+	chakra,
 	Box,
 	Flex,
 	Text,
@@ -21,6 +23,42 @@ import {
 	ChevronDownIcon,
 	ChevronRightIcon,
 } from "@chakra-ui/icons";
+import { AiFillHome } from "react-icons/ai";
+
+const Redes = ({ children, label, href }) => {
+	return (
+		<chakra.button
+			bg={useColorModeValue(
+				"linkHeader.50",
+				"linkHeader.500"
+			)}
+			rounded={"full"}
+			w={"3rem"}
+			h={"3rem"}
+			cursor={"pointer"}
+			as={"a"}
+			href={href}
+			display={"inline-flex"}
+			alignItems={"center"}
+			justifyContent={"center"}
+			transition={"background 0.3s ease"}
+			_hover={{
+				fontSize: "33px",
+
+				color: "white",
+				bg: useColorModeValue(
+					"linkHeader.400",
+					"whiteAlpha.200"
+				),
+				transform: "  scale(1.3);",
+				transition: "all 1s",
+			}}>
+			<VisuallyHidden>{label}</VisuallyHidden>
+
+			{children}
+		</chakra.button>
+	);
+};
 
 export default function Header() {
 	const { isOpen, onToggle } = useDisclosure();
@@ -60,17 +98,9 @@ export default function Header() {
 				<Flex
 					flex={{ base: 1 }}
 					justify={{ base: "center", md: "start" }}>
-					<Text
-						textAlign={useBreakpointValue({
-							base: "center",
-							md: "left",
-						})}
-						color={useColorModeValue(
-							"gray.800",
-							"white"
-						)}>
-						Logo
-					</Text>
+					<Redes label={"Home"} href={"/"}>
+						<AiFillHome />
+					</Redes>
 
 					<Flex
 						display={{ base: "none", md: "flex" }}

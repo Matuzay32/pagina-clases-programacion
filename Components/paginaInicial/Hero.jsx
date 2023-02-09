@@ -36,7 +36,7 @@ export default function Hero() {
 							md: "6xl",
 						}}
 						lineHeight={"110%"}>
-						The Tutor Temple
+						The Academic Temple
 						<br />
 						<Text
 							as={"span"}

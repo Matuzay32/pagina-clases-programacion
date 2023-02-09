@@ -82,7 +82,9 @@ export default function Footer() {
 				<Stack direction={"row"} spacing={6}>
 					<Redes
 						label={"WhatsApp"}
-						href={"https://wa.me/541159497891"}>
+						href={
+							"https://wa.me/541159497891?text=CONSULTA_GENERAL"
+						}>
 						<BsWhatsapp />
 					</Redes>
 				</Stack>

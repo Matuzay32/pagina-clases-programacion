@@ -16,7 +16,7 @@ import { BsWhatsapp } from "react-icons/bs";
 const features = [
 	{
 		consulta:
-			"https://wa.me/541159497891?text=CONSULTA_PAGOS",
+			"https://wa.me/+541159497891?text=CONSULTA_PAGOS",
 		heading: "Payments",
 		content:
 			"Choose from Stripe, Paddle, Braintree, or PayPal to launch your product quickly.",
@@ -38,7 +38,7 @@ const features = [
 	},
 	{
 		consulta:
-			"https://wa.me/541159497891?text=CONSULTA_TESIS",
+			"https://wa.me/+541159497891?text=CONSULTA_TESIS",
 
 		heading: "Tesis",
 		content:
@@ -61,7 +61,7 @@ const features = [
 	},
 	{
 		consulta:
-			"https://wa.me/541159497891?text=CONSULTA_PROGRAMACION",
+			"https://wa.me/+541159497891?text=CONSULTA_PROGRAMACION",
 		heading: "API Included",
 		content:
 			"Roll your own API to easily connect with other apps or services. Pull in updates.",

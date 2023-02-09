@@ -1,4 +1,4 @@
-import { SVGProps } from "react";
+import { SVGProps, useState } from "react";
 import {
 	Container,
 	Box,
@@ -13,75 +13,7 @@ import {
 
 import { BsWhatsapp } from "react-icons/bs";
 
-const features = [
-	{
-		consulta:
-			"https://wa.me/+541159497891?text=CONSULTA_PAGOS",
-		heading: "Payments",
-		content:
-			"Choose from Stripe, Paddle, Braintree, or PayPal to launch your product quickly.",
-		icon: (
-			<svg
-				width={36}
-				height={36}
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none"
-				viewBox="0 0 24 24"
-				stroke="currentColor">
-				<path
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					stroke-width="2"
-					d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
-			</svg>
-		),
-	},
-	{
-		consulta:
-			"https://wa.me/+541159497891?text=CONSULTA_TESIS",
-
-		heading: "Tesis",
-		content:
-			"Webhooks are wired up to automatically email customers PDF receipts and invoices.",
-		icon: (
-			<svg
-				width={36}
-				height={36}
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none"
-				viewBox="0 0 24 24"
-				stroke="currentColor">
-				<path
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					stroke-width="2"
-					d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
-			</svg>
-		),
-	},
-	{
-		consulta:
-			"https://wa.me/+541159497891?text=CONSULTA_PROGRAMACION",
-		heading: "API Included",
-		content:
-			"Roll your own API to easily connect with other apps or services. Pull in updates.",
-		icon: (
-			<svg
-				width={36}
-				height={36}
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none"
-				viewBox="0 0 24 24"
-				stroke="currentColor">
-				<path
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					stroke-width="2"
-					d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-			</svg>
-		),
-	},
-];
+import { features as datosFeatures } from "../thesisClasses/site-config";
 
 const Redes = ({ children, label, href }) => {
 	return (
@@ -119,6 +51,7 @@ const Redes = ({ children, label, href }) => {
 };
 
 const Features = () => {
+	const [features, setFeatures] = useState(datosFeatures);
 	return (
 		<Container maxW="6xl" p={{ base: 5, md: 10 }}>
 			<chakra.h3
@@ -140,7 +73,7 @@ const Features = () => {
 							"gray.100",
 							"gray.700"
 						)}
-						p={6}
+						p={10}
 						rounded="lg"
 						textAlign="center"
 						pos="relative">

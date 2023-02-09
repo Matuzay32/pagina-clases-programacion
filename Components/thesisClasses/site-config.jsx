@@ -50,6 +50,7 @@ export const features = [
 		),
 	},
 	{
+		hrf: "/thesisClasses",
 		consulta:
 			"https://wa.me/+541159497891?text=CONSULTA_TESIS",
 
@@ -73,6 +74,8 @@ export const features = [
 		),
 	},
 	{
+		hrf: "/programmingClasses",
+
 		consulta:
 			"https://wa.me/+541159497891?text=CONSULTA_PROGRAMACION",
 		heading: "Programming",

@@ -324,4 +324,16 @@ const NAV_ITEMS = [
 			},
 		],
 	},
+
+	{
+		label: "About Us",
+		children: [
+			{
+				label: "Get to know us",
+				subLabel:
+					"Learn more about our philosophy and goals and find out why The Academic Temple is the perfect place for you.",
+				href: "/about",
+			},
+		],
+	},
 ];

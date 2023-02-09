@@ -9,6 +9,8 @@ import {
 	Link,
 	useColorModeValue,
 	VisuallyHidden,
+	VStack,
+	Button,
 } from "@chakra-ui/react";
 
 import { BsWhatsapp } from "react-icons/bs";
@@ -53,7 +55,7 @@ const Redes = ({ children, label, href }) => {
 const Features = () => {
 	const [features, setFeatures] = useState(datosFeatures);
 	return (
-		<Container maxW="6xl" p={{ base: 5, md: 10 }}>
+		<Container maxW="6xl" p={{ base: 5, md: 10 }} mt={20}>
 			<chakra.h3
 				fontSize="4xl"
 				fontWeight="bold"
@@ -66,48 +68,107 @@ const Features = () => {
 				placeItems="center"
 				spacing={10}
 				mb={4}>
-				{features?.map((feature, index) => (
-					<Box
-						key={index}
-						bg={useColorModeValue(
-							"gray.100",
-							"gray.700"
-						)}
-						p={10}
-						rounded="lg"
-						textAlign="center"
-						pos="relative">
-						<Flex
-							p={2}
-							w="max-content"
-							color="white"
-							bgGradient="linear(to-br, #228be6, #15aabf)"
-							rounded="md"
-							marginInline="auto"
-							pos="absolute"
-							left={0}
-							right={0}
-							top="-1.5rem"
-							boxShadow="lg">
-							{feature.icon}
-						</Flex>
-						<chakra.h3
-							fontWeight="semibold"
-							fontSize="2xl"
-							mt={6}>
-							{feature.heading}
-						</chakra.h3>
-						<Text fontSize="md" mt={4}>
-							{feature.content}
-						</Text>
+				{features?.map((feature, index) =>
+					index === 0 ? (
+						<Box
+							key={index}
+							bg={useColorModeValue(
+								"gray.100",
+								"gray.700"
+							)}
+							p={10}
+							rounded="lg"
+							textAlign="center"
+							pos="relative">
+							<Flex
+								p={2}
+								w="max-content"
+								color="white"
+								bgGradient="linear(to-br, #228be6, #15aabf)"
+								rounded="md"
+								marginInline="auto"
+								pos="absolute"
+								left={0}
+								right={0}
+								top="-1.5rem"
+								boxShadow="lg">
+								{feature.icon}
+							</Flex>
+							<chakra.h3
+								fontWeight="semibold"
+								fontSize="2xl"
+								mt={6}>
+								{feature.heading}
+							</chakra.h3>
+							<Text fontSize="md" mt={4}>
+								{feature.content}
+							</Text>
 
-						<Redes
-							label={"WhatsApp"}
-							href={feature?.consulta}>
-							<BsWhatsapp />
-						</Redes>
-					</Box>
-				))}
+							<Redes
+								label={"WhatsApp"}
+								href={feature?.consulta}>
+								<BsWhatsapp />
+							</Redes>
+						</Box>
+					) : (
+						<Box
+							key={index}
+							bg={useColorModeValue(
+								"gray.100",
+								"gray.700"
+							)}
+							p={10}
+							rounded="lg"
+							textAlign="center"
+							pos="relative">
+							<Flex
+								p={2}
+								w="max-content"
+								color="white"
+								bgGradient="linear(to-br, #228be6, #15aabf)"
+								rounded="md"
+								marginInline="auto"
+								pos="absolute"
+								left={0}
+								right={0}
+								top="-1.5rem"
+								boxShadow="lg">
+								{feature.icon}
+							</Flex>
+							<chakra.h3
+								fontWeight="semibold"
+								fontSize="2xl"
+								mt={6}>
+								{feature.heading}
+							</chakra.h3>
+							<Text fontSize="md" mt={4}>
+								{feature.content}
+							</Text>
+							<VStack spacing={2}>
+								<Redes
+									label={"WhatsApp"}
+									href={feature?.consulta}>
+									<BsWhatsapp />
+								</Redes>
+
+								<Button
+									colorScheme={"green"}
+									bg={"linkHeader.400"}
+									px={6}
+									_hover={{
+										bgGradient:
+											"linear(to-l, #0ea5e9,#2563eb)",
+									}}
+									onClick={() => {
+										window.location.href =
+											feature.hrf;
+									}}>
+									{"Go " + feature.heading}
+								</Button>
+							</VStack>
+						</Box>
+					)
+				)}
 			</SimpleGrid>
 		</Container>
 	);

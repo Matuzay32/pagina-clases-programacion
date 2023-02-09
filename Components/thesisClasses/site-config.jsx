@@ -16,7 +16,7 @@ export const siteConfig = {
 		name: "Valentina ",
 		accounts: [
 			{
-				url: "https://api.whatsapp.com/send?phone=+573226544891&text=THESIS_CONSULTATION_A",
+				url: "https://api.whatsapp.com/send?phone=+573226544891&text=THESIS_CONSULTATION_AND_CLASESS",
 
 				label: "",
 				type: "green",
@@ -70,7 +70,7 @@ export const features = [
 	{
 		hrf: "/thesisClasses",
 		consulta:
-			"https://wa.me/+541159497891?text=THESIS_CONSULTATION",
+			"https://wa.me/+573226544891?text=THESIS_CONSULTATION",
 
 		heading: "Thesis",
 		content:

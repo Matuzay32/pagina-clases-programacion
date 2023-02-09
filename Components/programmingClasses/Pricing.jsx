@@ -16,28 +16,30 @@ import { BsFillCloudCheckFill } from "react-icons/bs";
 import { AiOutlineCloudServer } from "react-icons/ai";
 import { FaBook, FaServer } from "react-icons/fa";
 import { TbCertificate } from "react-icons/tb";
+import { SiWebstorm } from "react-icons/si";
+
 import { IconType } from "react-icons";
 
 const plansList = [
 	{
-		title: "Academics Works",
-		price: 1500,
-		icon: FaBook,
+		title: "Building Custom Websites",
+		price: 15000,
+		icon: SiWebstorm,
 		features: [
-			"Writing of essays and theses in Spanish and English on topics related to marketing, psychology, and administration",
-			"Translation and revision of texts in Spanish and English related to marketing, psychology, and administration",
-			"Research and preparation of reports in Spanish and English on topics related to marketing, psychology, and administration",
+			"Visually appealing and responsive website design optimized for desktop and mobile devices.",
+			"Custom graphics and images to enhance the visual appeal and branding of the website.",
+			"Basic security measures such as SSL encryption to protect the website and visitors' information.",
 		],
 	},
 	{
-		title: "Tutorials in the area of ​​psychology.",
+		title: "Private Programming Classes",
 		price: 1500,
 		icon: TbCertificate,
 		features: [
 			"Private classes",
-			"We do academic works",
+			"We Work on Practical Assignments",
 			"follow-up in the learning process",
-			"The works can be done in both English and Spanish.",
+			"Preparation for Business Technical Tests",
 		],
 	},
 ];
@@ -95,9 +97,11 @@ const PricingCard = ({ title, price, icon, features }) => {
 						ARS
 					</Text>
 				</Text>
-				<Text fontSize="md" color="gray.500">
-					per Hour
-				</Text>
+				{title != "Building Custom Websites" && (
+					<Text fontSize="md" color="gray.500">
+						per Hour
+					</Text>
+				)}
 			</Box>
 			<VStack spacing={2} alignItems="flex-start" my={6}>
 				{features.map((feature, index) => (

@@ -16,7 +16,25 @@ export const siteConfig = {
 		name: "Valentina ",
 		accounts: [
 			{
-				url: "https://api.whatsapp.com/send?phone=+573226544891&text=CONSULTA_TESIS_TRABAJOS",
+				url: "https://api.whatsapp.com/send?phone=+573226544891&text=THESIS_CONSULTATION_A",
+
+				label: "",
+				type: "green",
+				icon: <BsWhatsapp />,
+			},
+		],
+	},
+};
+
+export const programmingClassesCard = {
+	author: {
+		imagen: "programming.png",
+		title: "Asesor",
+		desc: "No dudes  en contactar a nuestro asesor profesional en la materia, estamos atentos a tu solicitud",
+		name: "Ezequiel",
+		accounts: [
+			{
+				url: "https://wa.me/+541159497891?text=PROGRAMMING_QUERY",
 
 				label: "",
 				type: "green",
@@ -29,7 +47,7 @@ export const siteConfig = {
 export const features = [
 	{
 		consulta:
-			"https://wa.me/+541159497891?text=CONSULTA_PAGOS",
+			"https://wa.me/+541159497891?text=CONSULTATION_PAYMENTS",
 		heading: "Payments",
 		content:
 			"Consult with our advisors about payment methods. We're here to help you find the option that best fits your needs and preferences. And don't worry, we guarantee the security and privacy of your data.",
@@ -52,7 +70,7 @@ export const features = [
 	{
 		hrf: "/thesisClasses",
 		consulta:
-			"https://wa.me/+541159497891?text=CONSULTA_TESIS",
+			"https://wa.me/+541159497891?text=THESIS_CONSULTATION",
 
 		heading: "Thesis",
 		content:
@@ -77,7 +95,7 @@ export const features = [
 		hrf: "/programmingClasses",
 
 		consulta:
-			"https://wa.me/+541159497891?text=CONSULTA_PROGRAMACION",
+			"https://wa.me/+541159497891?text=PROGRAMMING_QUERY",
 		heading: "Programming",
 		content:
 			"If you need help with web application creation, reach out to us. We offer private classes and support for exploring job opportunities in the programming field. We're here to help.",

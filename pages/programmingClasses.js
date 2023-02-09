@@ -7,7 +7,6 @@ export default function thesisClasses() {
 	return (
 		<Contenedor>
 			<Card></Card>
-
 			<ProcesoPrice></ProcesoPrice>
 			<Pricing></Pricing>
 		</Contenedor>

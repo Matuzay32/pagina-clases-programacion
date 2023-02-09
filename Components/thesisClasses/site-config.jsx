@@ -12,7 +12,7 @@ export const siteConfig = {
 	author: {
 		imagen: "englishImg.jpeg",
 		title: "Asesora",
-		desc: "No dudes  en contactar a nuestra asesora profesional en la materia, estamos atentos a tu solicitud",
+		desc: "Don't hesitate to reach out to our professional advisor in the subject, we are eagerly awaiting your request.",
 		name: "Valentina ",
 		accounts: [
 			{
@@ -30,7 +30,7 @@ export const programmingClassesCard = {
 	author: {
 		imagen: "programming.png",
 		title: "Asesor",
-		desc: "No dudes  en contactar a nuestro asesor profesional en la materia, estamos atentos a tu solicitud",
+		desc: "Don't hesitate to reach out to our professional advisor in the subject, we are eagerly awaiting your request.",
 		name: "Ezequiel",
 		accounts: [
 			{

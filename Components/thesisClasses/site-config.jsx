@@ -16,7 +16,7 @@ export const siteConfig = {
 		name: "Valentina ",
 		accounts: [
 			{
-				url: "https://api.whatsapp.com/send?phone=+573226544891&text=TEXTO",
+				url: "https://api.whatsapp.com/send?phone=+573226544891&text=CONSULTA_TESIS_TRABAJOS",
 
 				label: "",
 				type: "green",

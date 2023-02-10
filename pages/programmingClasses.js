@@ -1,3 +1,4 @@
+import { SimpleGrid } from "@chakra-ui/react";
 import Contenedor from "../Components/paginaInicial/Contenedor";
 import Card from "../Components/programmingClasses/Card";
 import Pricing from "../Components/programmingClasses/Pricing";
@@ -10,6 +11,8 @@ export default function thesisClasses() {
 			<Card></Card>
 
 			<Tecnologies></Tecnologies>
+		
+
 			<ProcesoPrice></ProcesoPrice>
 			<Pricing></Pricing>
 		</Contenedor>

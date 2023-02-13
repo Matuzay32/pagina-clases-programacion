@@ -25,6 +25,10 @@ const colors = {
 		100: "#F7FAFC",
 		200: "rgba(255, 255, 255, 0.452)",
 	},
+
+	tecnologies: {
+		100: "RGBA(0, 0, 0, 0.08)",
+	},
 };
 
 export const tema = extendTheme({ colors });

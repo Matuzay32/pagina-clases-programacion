@@ -30,7 +30,10 @@ const Contenido = ({ children }) => {
 	return (
 		<Stack
 			overflow={"hidden"}
-			bg={useColorModeValue("whiteAlpha.50", "gray.800")}
+			bg={useColorModeValue(
+				"tecnologies.100",
+				"gray.800"
+			)}
 			backdropFilter={"blur(2px)"}
 			boxShadow={"lg"}
 			p={8}
@@ -369,7 +372,7 @@ export default function Tecnologies() {
 					fontWeight="bold"
 					mb={18}
 					textAlign="center">
-					With the technologies we work with
+					With what technologies do we work?
 				</chakra.h3>
 				<SimpleGrid
 					columns={{ base: 1, md: 4 }}

@@ -64,8 +64,8 @@ const Features = () => {
 				Professional Help at Your Fingertips
 			</chakra.h3>
 			<SimpleGrid
-				columns={{ base: 1, sm: 2, md: 3 }}
-				placeItems="center"
+				columns={{ base: 1, sm: 2, md: 2 }}
+				justifyContent={"center"}
 				spacing={10}
 				mb={4}>
 				{features?.map((feature, index) =>

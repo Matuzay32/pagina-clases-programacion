@@ -310,13 +310,6 @@ const NAV_ITEMS = [
 		label: "What we offer",
 		children: [
 			{
-				label: "Programming Classes",
-				subLabel:
-					"Learn coding and programming with our expert instructors",
-				href: "/programmingClasses",
-			},
-
-			{
 				label: "Thesis Classes (Social Sciences and Humanities)",
 				subLabel:
 					"Get support and guidance for your thesis in social sciences and humanities",

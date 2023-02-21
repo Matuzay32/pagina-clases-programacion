@@ -21,7 +21,7 @@ import { IconType } from "react-icons";
 const plansList = [
 	{
 		title: "Academics Works",
-		price: 1500,
+		price: 2000,
 		icon: FaBook,
 		features: [
 			"Writing of essays and theses in Spanish and English on topics related to marketing, psychology, and administration",

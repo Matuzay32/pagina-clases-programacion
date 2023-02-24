@@ -310,9 +310,9 @@ const NAV_ITEMS = [
 		label: "What we offer",
 		children: [
 			{
-				label: "Thesis Classes (Social Sciences and Humanities)",
+				label: "Comprehensive educational solutions for academic success",
 				subLabel:
-					"Get support and guidance for your thesis in social sciences and humanities",
+					"In our academic support service, we focus on the personal and professional growth of students, by strengthening their learning and ability to face academic challenges.",
 				href: "/thesisClasses",
 			},
 		],

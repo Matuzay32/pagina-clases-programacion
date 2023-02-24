@@ -45,11 +45,21 @@ export default function Hero() {
 						</Text>
 					</Heading>
 					<Text color={"gray.500"}>
-						Thank you for choosing The Tutor Temple.
-						Here you will find the best tutorials in
-						both English and programming. Our goal is
-						to help you achieve your goals and improve
-						your skills. Let's start together today!
+						Welcome to Academy Temple! We want to
+						thank you for choosing our website for
+						your academic needs. At Academy Temple, we
+						specialize in providing high-quality and
+						reliable academic work in both Spanish and
+						English. In addition to academic work, we
+						also offer classes in various fields of
+						knowledge in both languages to complement
+						and enrich our users' learning
+						experiences. We hope to be of great
+						assistance to you in your academic
+						journey, whether in Spanish or English,
+						and we are available to answer any
+						questions or concerns you may have. Thank
+						you for choosing Academy Temple!
 					</Text>
 					<Stack
 						direction={"column"}

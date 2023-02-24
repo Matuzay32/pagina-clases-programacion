@@ -310,7 +310,7 @@ const NAV_ITEMS = [
 		label: "What we offer",
 		children: [
 			{
-				label: "Your success is our priority",
+				label: "Academic assistance",
 				subLabel:
 					"In our academic support service, we focus on the personal and professional growth of students, by strengthening their learning and ability to face academic challenges.",
 				href: "/thesisClasses",
